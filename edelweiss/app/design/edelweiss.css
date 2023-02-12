@@ -11,6 +11,9 @@
     padding: 0.5em 1em;
     text-decoration: none;
 }
+.NavMenu a:not(.current):hover {
+    text-decoration: underline;
+}
 .NavMenu .current {
     background-color: var(--link-color);
     color: var(--link-color-text);
@@ -26,4 +29,8 @@ body {
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.phone-humber{
+    white-space: nowrap;
 }
