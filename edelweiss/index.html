@@ -79,17 +79,23 @@
         media="all"
         href="app/design/appart-15-layout-grid.css"
         rel="stylesheet" type="text/css">
+    <link
+        media="all"
+        href="app/design/edelweiss.css"
+        rel="stylesheet" type="text/css">
 
 </head>
-<body class="grid-queen is-without-root is-without-west join-layers use-colors colors--base">
+<body class="grid-queen is-without-root is-without-west join-layers colors--base">
 
 <div class="grid-queen use-colors colors--swed">
-    <div class="inngrid-full" style="text-align: right">
-        <div>
-            <a href="./">latviski</a>
-            <a href="./">русский</a>
-            <a href="./">english</a>
-        </div>
+    <div class="inngrid-full" style="justify-items: end">
+        <nav class="NavMenu">
+            <ul>
+                <li><a href="./">latviski</a>
+                <li><a href="./" class="current">русский</a>
+                <li><a href="./">english</a>
+            </ul>
+        </nav>
     </div>
 </div>
 
@@ -111,32 +117,36 @@
 
 <div class="grid-queen use-colors colors--swed">
     <div class="inngrid-full">
-        <div>
-            <a href="./">latviski</a>
-            <a href="./">русский</a>
-            <a href="./">english</a>
-        </div>
+        <nav class="NavMenu">
+            <ul>
+                <li><a href="./" class="current">Главная</a>
+                <li><a href="./">Наши специалисты</a>
+                <li><a href="./">Консультации</a>
+                <li><a href="./">Семинары и тренинги</a>
+                <li><a href="./">Менторинг</a>
+                <li><a href="./">Блог</a>
+                <li><a href="./">Контакты</a>
+            </ul>
+        </nav>
     </div>
 </div>
 
 <main class="grid-queen is-without-root is-without-west use-colors colors--ivory">
 
-    <div style="padding: 2em 0">
-        <ul class="text-block-bigger">
-            <li>Семейная психология и Психология Отношений
-            <li>Глубинная психология
-            <li>Телесно-ориентированная психология
-            <li>Гештальт-терапия
-            <li>Когнитивно-поведенческая терапия
-            <li>Детский психолог
-            <li>Сопровождение в медитациях
-            <li>Супервизия для профессионалов
-        </ul>
-    </div>
+    <ul class="inngrid text-block-bigger" style="padding: 2em 0">
+        <li>Семейная психология и Психология Отношений
+        <li>Глубинная психология
+        <li>Телесно-ориентированная психология
+        <li>Гештальт-терапия
+        <li>Когнитивно-поведенческая терапия
+        <li>Детский психолог
+        <li>Сопровождение в медитациях
+        <li>Супервизия для профессионалов
+    </ul>
 
-    <div class="text-block-bigger" style="padding-bottom: 2em">
-        Записаться на консультацию к нашим специалистам:
-        <ul>
+    <div class="inngrid text-block-bigger" style="padding-bottom: 2em;">
+        <div class="h4">Записаться на консультацию к нашим специалистам:</div>
+        <ul class="inngrid">
             <li>
                 по телефону
                 <span class="phone-humber">+371 29 323 728</span>
@@ -154,11 +164,12 @@
     </div>
 
 </main>
-
-<footer style="grid-column: full">
+<footer class="FooterSpace" style="grid-column: full">
+<!--
     <figure>
         <img src="art/edelweiss-flower-1080.jpg" alt="Edelweiss flower" style="width: 100%;">
     </figure>
+-->
 </footer>
 <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ THE END -->
 </body>
